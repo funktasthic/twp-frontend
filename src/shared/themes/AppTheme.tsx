@@ -1,4 +1,4 @@
-export type AppColors = {
+export const AppColors = {
     primary: "#0096FF",
     secondary: "#00E4FF",
     background: "#000C14",
