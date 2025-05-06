@@ -30,16 +30,18 @@ export const PrimaryButton = ({text, loading, disabled, icon, onPress}: Props) =
 
 const styles = StyleSheet.create({
   button: {
-      width: '100%',
+      width: "100%",
       height: 60,
-      borderRadius: 25,
+      borderRadius: 30,
+      justifyContent: "center"
   },
   content:{
-      margin: 4,
+      margin: 4
   },
   label:{
-      color: 'white',
-      fontWeight: 'bold',
+      color: "white",
+      fontWeight: "bold",
+      fontSize: 18,
       padding: 2,
   },
 });
