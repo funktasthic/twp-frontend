@@ -17,8 +17,8 @@ const HomeStyles = StyleSheet.create({
         gap: 20
     },
     logo: {
-        width: 200,
-        height: 200,
+        width: 180,
+        height: 180,
         top: 40
     },
     textLogo: {
