@@ -19,7 +19,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./src/assets/icons/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.funktasthic.twpfrontend"
     },
     "web": {
       "favicon": "./src/assets/icons/favicon.png"
