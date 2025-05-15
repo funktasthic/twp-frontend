@@ -6,11 +6,10 @@ interface Props {
   text: string;
   loading?: boolean;
   disabled?: boolean;
-  icon?: string;
   onPress: () => void;
 }
 
-export const PrimaryButton = ({text, loading, disabled, icon, onPress}: Props) => {
+export const PrimaryButton = ({text, loading, disabled, onPress}: Props) => {
   return (
     <Button
       style={styles.button}
@@ -20,7 +19,6 @@ export const PrimaryButton = ({text, loading, disabled, icon, onPress}: Props) =
       onPress={onPress}
       loading={loading}
       disabled={disabled}
-      icon={icon}
       buttonColor={AppColors.primary}
     >
       {text}
