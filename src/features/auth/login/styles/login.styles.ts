@@ -12,9 +12,19 @@ const LoginStyles = StyleSheet.create({
         alignItems: "center"
     },
     buttonGroup: {
-        width: "90%",
         marginBottom: 180,
+        marginTop: 60,
+        width: "90%",
         gap: 20
+    },
+    inputGroup: {
+        width: '100%',
+        paddingHorizontal: 24,
+        marginTop: 20,
+        gap: 5,
+    },
+    input: {
+        marginTop: 10
     },
     textLogo: {
         width: 300,
