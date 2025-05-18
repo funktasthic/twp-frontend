@@ -29,6 +29,7 @@ const LoginScreen = () => {
           label="Contraseña"
           secureTextEntry
           placeholder="Ingresa tu contraseña"
+          rightIcon={"eye"}
           style={LoginStyles.input}
         />
       </View>

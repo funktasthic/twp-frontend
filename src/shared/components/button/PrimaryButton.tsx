@@ -5,11 +5,12 @@ import { AppColors } from "../../themes/AppTheme";
 interface Props {
   text: string;
   loading?: boolean;
+  icon?: string;
   disabled?: boolean;
   onPress: () => void;
 }
 
-export const PrimaryButton = ({text, loading, disabled, onPress}: Props) => {
+export const PrimaryButton = ({text, loading, disabled, icon, onPress}: Props) => {
   return (
     <Button
       style={styles.button}
@@ -18,6 +19,7 @@ export const PrimaryButton = ({text, loading, disabled, onPress}: Props) => {
       mode="contained"
       onPress={onPress}
       loading={loading}
+      icon={icon}
       disabled={disabled}
       buttonColor={AppColors.primary}
     >

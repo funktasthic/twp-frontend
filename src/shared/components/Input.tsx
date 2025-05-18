@@ -2,6 +2,7 @@ import React from "react";
 import { StyleSheet, StyleProp, ViewStyle } from "react-native";
 import { TextInput } from "react-native-paper";
 import { KeyboardTypeOptions } from "react-native";
+import { IconSource } from "react-native-paper/lib/typescript/components/Icon";
 
 interface Props {
   label?: string;
@@ -12,6 +13,7 @@ interface Props {
   error?: boolean;
   secureTextEntry?: boolean;
   keyboardType?: KeyboardTypeOptions;
+  rightIcon?: IconSource;
   onChangeText?: (content: string) => void;
 }
 
@@ -23,6 +25,7 @@ export const Input = ({
   placeholder,
   error,
   secureTextEntry,
+  rightIcon,
   keyboardType,
   onChangeText }: Props) => {
   return (
@@ -39,6 +42,7 @@ export const Input = ({
       activeOutlineColor="white"
       placeholderTextColor="white"
       textColor="white"
+      right={rightIcon && <TextInput.Icon icon={rightIcon} />}
       secureTextEntry={secureTextEntry}
       keyboardType={keyboardType}
     />
