@@ -1,14 +1,14 @@
 import React from 'react';
-import LoginStyles from '../styles/login.styles';
+import LoginStyles from './login.styles';
 import { View, Image } from 'react-native';
-import { PrimaryButton } from '../../../../shared/components/button/PrimaryButton';
 import { StackParamsList } from '../../../../app/AppStack';
 import { StackScreenProps } from '@react-navigation/stack';
-import { Input } from '../../../../shared/components/Input';
+import { Input } from '../../../../shared/components/ui/Input';
+import { Button } from '../../../../shared/components/ui/Button';
 
 interface Props extends StackScreenProps<StackParamsList, "Login"> {}
 
-const LoginScreen = () => {
+const LoginScreen = ({navigation}: Props) => {
 
   return (
     <View style={LoginStyles.container}>
@@ -35,7 +35,7 @@ const LoginScreen = () => {
       </View>
 
       <View style={LoginStyles.buttonGroup}>
-        <PrimaryButton text="Ingresar" onPress={() => console.log("Login")} />
+        <Button text="Ingresar" onPress={() => console.log("Login")} />
       </View>
     </View>
   );

@@ -1,30 +1,25 @@
 import { StyleSheet } from "react-native";
-import { AppColors } from "../../../../shared/themes/AppTheme";
+import { AppColors } from "../../../shared/themes/AppTheme";
 
-const LoginStyles = StyleSheet.create({
+export const HomeStyles = StyleSheet.create({
     container: {
         flex: 1,
         alignItems: "center",
+        justifyContent: "center",
         backgroundColor: AppColors.background
     },
     logoContainer: {
-        marginTop: 40,
         alignItems: "center"
     },
     buttonGroup: {
-        marginBottom: 180,
-        marginTop: 60,
         width: "90%",
+        marginBottom: 180,
         gap: 20
     },
-    inputGroup: {
-        width: '100%',
-        paddingHorizontal: 24,
-        marginTop: 20,
-        gap: 5,
-    },
-    input: {
-        marginTop: 10
+    logo: {
+        width: 180,
+        height: 180,
+        top: 40
     },
     textLogo: {
         width: 300,
@@ -32,5 +27,3 @@ const LoginStyles = StyleSheet.create({
         top: 20
     }
 });
-
-export default LoginStyles;
