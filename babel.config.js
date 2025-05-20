@@ -7,6 +7,15 @@ module.exports = function(api) {
         plugins: ['react-native-paper/babel'],
       },
     },
-    plugins: []
+    plugins: [
+      [
+        "module:react-native-dotenv",
+        {
+          envName: "APP_ENV",
+          moduleName: "@env",
+          path: "env/.env",
+        }
+      ]
+    ]
   };
 };
