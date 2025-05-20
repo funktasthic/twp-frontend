@@ -1,4 +1,4 @@
-import { Button } from "react-native-paper";
+import { Button as RNPButton } from "react-native-paper";
 import { StyleSheet } from "react-native";
 import { AppColors } from "../../themes/AppTheme";
 
@@ -10,9 +10,9 @@ interface Props {
   onPress: () => void;
 }
 
-export const PrimaryButton = ({text, loading, disabled, icon, onPress}: Props) => {
+export const Button = ({text, loading, disabled, icon, onPress}: Props) => {
   return (
-    <Button
+    <RNPButton
       style={styles.button}
       contentStyle={styles.content}
       labelStyle={styles.label}
@@ -24,7 +24,7 @@ export const PrimaryButton = ({text, loading, disabled, icon, onPress}: Props) =
       buttonColor={AppColors.primary}
     >
       {text}
-    </Button>
+    </RNPButton>
   );
 };
 
