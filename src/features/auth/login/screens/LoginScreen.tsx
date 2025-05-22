@@ -1,10 +1,10 @@
 import React from 'react';
-import LoginStyles from './login.styles';
 import { View, Image } from 'react-native';
 import { StackParamsList } from '../../../../app/AppStack';
 import { StackScreenProps } from '@react-navigation/stack';
 import { Input } from '../../../../shared/components/ui/Input';
 import { Button } from '../../../../shared/components/ui/Button';
+import { LoginStyles } from './LoginStyles';
 
 interface Props extends StackScreenProps<StackParamsList, "Login"> {}
 
